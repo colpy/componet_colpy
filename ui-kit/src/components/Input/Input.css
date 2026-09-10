@@ -1,0 +1,14 @@
+.uikit-input-wrapper { display: flex; flex-direction: column; gap: var(--uikit-space-1); }
+.uikit-input-label { font-size: var(--uikit-fs-sm); color: var(--uikit-ink); font-weight: 600; }
+.uikit-input {
+  font-family: var(--uikit-font-ui);
+  font-size: var(--uikit-fs-md);
+  padding: var(--uikit-space-2) var(--uikit-space-3);
+  border: 10px solid var(--uikit-border);
+  border-radius: var(--uikit-radius-sm);
+  background: var(--uikit-surface);
+  color: var(--uikit-ink);
+}
+.uikit-input:focus-visible { outline: 2px solid var(--uikit-focus); outline-offset: 1px; }
+.uikit-input--error { border-color: var(--uikit-danger); }
+.uikit-input-error { font-size: var(--uikit-fs-sm); color: var(--uikit-danger); }
