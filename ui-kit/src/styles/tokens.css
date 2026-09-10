@@ -1,0 +1,53 @@
+/*
+  Concepto: "Blueprint" — planos técnicos de diseño.
+  Fondo tipo plano, líneas finas en vez de sombras suaves,
+  esquinas con marcas de corte en vez de border-radius genérico.
+*/
+:root {
+  /* Color */
+  --bp-ink: #10151F;         /* texto principal */
+  --bp-blue: #1B3B6F;        /* azul plano, primario */
+  --bp-blue-deep: #0F2647;   /* hover/active del primario */
+  --bp-paper: #F6F7F5;       /* fondo */
+  --bp-line: #C9CFD6;        /* líneas/bordes */
+  --bp-orange: #FF6B35;      /* acento de anotación técnica */
+  --bp-red: #D2483C;         /* estados de error */
+  --bp-green: #2E7D5B;       /* estados de éxito */
+  --bp-muted: #5C6773;       /* texto secundario */
+
+  /* Tipografía */
+  --bp-font: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --bp-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  --bp-size-sm: 0.8125rem;
+  --bp-size-md: 0.9375rem;
+  --bp-size-lg: 1.125rem;
+
+  /* Espaciado (escala base 4px) */
+  --bp-space-1: 4px;
+  --bp-space-2: 8px;
+  --bp-space-3: 12px;
+  --bp-space-4: 16px;
+  --bp-space-5: 24px;
+  --bp-space-6: 32px;
+
+  /* Bordes: sin radios grandes, esto es un plano, no una app SaaS */
+  --bp-radius: 2px;
+  --bp-border: 1px solid var(--bp-line);
+
+  /* Foco accesible */
+  --bp-focus-ring: 0 0 0 2px var(--bp-paper), 0 0 0 4px var(--bp-blue);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :root { --bp-transition: 120ms ease; }
+}
+@media (prefers-reduced-motion: reduce) {
+  :root { --bp-transition: 0ms; }
+}
+
+body {
+  background: var(--bp-paper);
+  color: var(--bp-ink);
+  font-family: var(--bp-font);
+  margin: 0;
+}

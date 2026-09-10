@@ -1,0 +1,20 @@
+.uikit-card {
+  background: var(--uikit-surface);
+  border: 1px solid var(--uikit-border);
+  border-radius: var(--uikit-radius-md);
+  overflow: hidden;
+}
+.uikit-card--elevated { box-shadow: var(--uikit-shadow-1); border-color: transparent; }
+
+.uikit-card__header {
+  padding: var(--uikit-space-4);
+  border-bottom: 1px solid var(--uikit-border);
+  font-weight: 600;
+  color: var(--uikit-ink);
+}
+.uikit-card__body { padding: var(--uikit-space-4); color: var(--uikit-ink-muted); }
+.uikit-card__footer {
+  padding: var(--uikit-space-3) var(--uikit-space-4);
+  border-top: 1px solid var(--uikit-border);
+  background: var(--uikit-bg);
+}
