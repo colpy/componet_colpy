@@ -1,0 +1,3 @@
+.uikit-streaming { font-family: var(--uikit-font-ui); color: var(--uikit-ink); }
+.uikit-streaming__cursor { display: inline-block; width: 2px; height: 1em; background: var(--uikit-primary); margin-left: 2px; vertical-align: text-bottom; animation: uikit-blink .8s step-end infinite; }
+@keyframes uikit-blink { 50% { opacity: 0; } }
